@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>CV - Jessica Lovely Rolas Sugianto </title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="logo">CV - Jessica Lovely Rolas Sugianto</div>
+        <nav>
+            <a href="Home.HTML">Home</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+        <div class="hero-container">
+
+            <div class="hero-image">
+                <img src="foto profile.jpeg" alt="Foto Profil">
+            </div>
+
+            <div class="hero-text">
+                <h1>Halo, Saya Jessica Lovely ! </h1>
+                <p>
+                    saya adalah seorang pelajar di SMP SANTA LAURENSIA, saya adalah sesorang yang minta dalam <strong>
+                        kesenian dan filosofi </strong>
+                    saya juga sangat gemar membaca buku. saya berusia 14 tahun dan kian akan segera lulus dari SMP. saya
+                    adalah seseorang yang memiliki rasa penasaran yang tinggi.
+                    saya lahir pada tanggal 11 september 2011. saya adalah anak ke pertama di keluarga saya. sebelumnya
+                    saya berasal dari sekolah bernama penabur.
+                </p>
+
+                <p>
+                    tipe kepribadian saya adalah INFP-T . saya adalah seorang yang tidak suka bergaul dengan banyak
+                    orang tapi saya selalu berusaha menunjukan yang terbaik .dalam perjalanan SMP saya,
+                    saya telah menemukan banyak pelajaran berharga dalam hidup saya. salah satunya adalah cara
+                    berdaptasi. kkarena saya adalah seorang yang susah beradaptasi, guru guru dan teman teman saya
+                    sanagt membantu
+                    saya mengisi kekurangan saya dalam berdaptasi . saya juga sangat mengidolakan seorang penyannyi
+                    bernama ed sheeran. beliau adalah penyanyi pop kesukaan saya dan ayah saya.
+                </p>
+                <nav>
+                    <a href="Home.HTML" </a>
+                        <a href="about.html" </a>
+                            <button>About</button>
+                </nav>
+    </section>
+
+
+    <!-- Profile Picture Section -->
+    <section class="gallery">
+        <h2 class="fade-in">Profile Picture</h2>
+
+        <div class="gallery-container">
+            <div class="card fade-in">
+                <img src="foto 1.jpeg" alt="Foto 1">
+            </div>
+
+            <div class="card fade-in">
+                <img src="foto 2.jpeg" alt="Foto 2">
+            </div>
+
+            <div class="card fade-in">
+                <img src="foto.3.jpeg" alt="Foto 3">
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const faders = document.querySelectorAll('.fade-in');
+
+        const appearOptions = {
+            threshold: 0.2
+        };
+
+        const appearOnScroll = new IntersectionObserver(function (entries, observer) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                } else {
+                    entry.target.classList.add('show');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, appearOptions);
+
+        faders.forEach(fader => {
+            appearOnScroll.observe(fader);
+        });
+    </script>
+
+    <!-- Website Link Section -->
+    <section class="link-section">
+
+        <div class="link-container fade-in">
+
+            <a href="https://www.santa-laurensia.com/" target="_blank" class="link-card">
+                <img src="logo sanlau.png" alt="sekolah santa laurensia">
+                <p>GO VISIT THIS WEBSITE ! </p>
+            </a>
+
+            <!-- Penjelasan -->
+            <div class="link-description">
+                <h3>Sekolah Santa Laurensia</h3>
+
+                <p>
+                    Sekolah Santa Laurensia merupakan sekolah yang dikenal dengan pendidikan
+                    berkualitas dan pengembangan karakter siswa. Sekolah ini menekankan
+                    keseimbangan antara akademik, kreativitas, serta kegiatan olahraga.
+                </p>
+
+                <p>
+                    Melalui berbagai program pendidikan dan kegiatan ekstrakurikuler,
+                    Santa Laurensia membantu siswa untuk berkembang secara intelektual,
+                    sosial, dan spiritual.
+                </p>
+
+            </div>
+
+    </section>
+
+    <!-- Website Link Section -->
+    <section class="link-section">
+
+        <div class="link-container fade-in allign-right">
+
+            <a href="https://bpkpenabur.or.id/" target="_blank" class="link-card">
+                <img src="Logo_BPK_PENABUR.png" alt="Sekolah BPK penabur">
+                <p>GO VISIT THIS WEBSITE ! </p>
+            </a>
+
+            <div class="link-description">
+                <h3>BPK PENABUR</h3>
+
+                <p>
+                    BPK PENABUR adalah salah satu lembaga pendidikan Kristen di Indonesia
+                    yang memiliki komitmen untuk memberikan pendidikan berkualitas serta
+                    membentuk karakter siswa berdasarkan nilai-nilai Kristiani.
+                </p>
+
+                <p>
+                    Melalui berbagai program akademik, kegiatan ekstrakurikuler, serta
+                    pengembangan karakter, BPK PENABUR berupaya mempersiapkan siswa
+                    menjadi pribadi yang unggul, berintegritas, dan siap menghadapi
+                    tantangan masa depan.
+                </p>
+
+            </div>
+
+    </section>
+
+    <!-- Favorite Music Section -->
+    <!-- Favorite Music -->
+    <section class="music-section">
+        <h2 class="fade-in">Lagu Favorit</h2>
+
+        <div class="music-container fade-in">
+            <div class="music-card">
+                <h3>Best Part of Me (feat. YEBBA) - Ed Sheeran</h3>
+
+                <iframe style="border-radius:12px; margin-top: 1rem;"
+                    src="https://open.spotify.com/embed/track/5ug4vqGZ3eisGhY1IsziNX?utm_source=generator" width="100%"
+                    height="304" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
